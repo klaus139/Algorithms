@@ -1,0 +1,29 @@
+//The hamming distance of two equal-length strings is the number of positions, 
+//in which the two string differ. In other words, the number of character substitutions required to 
+//transform one string into the other.
+
+
+
+
+
+function hammingDistance (a, b) {
+  var count = 0;
+  for(var i = 0; i < a.length; i++){
+    if(a[i] !== b[i]){
+      count++;
+    }
+  }
+  
+	return count;
+}
+//return hexadecimal representation of a binary string
+function hexStringToBinary(str) {
+  var result = '';
+  for (var i = 0; i < str.length; i++) {
+    result += str.charCodeAt(i).toString(2);
+  }
+  return result;
+}
+
+
+
