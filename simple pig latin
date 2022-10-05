@@ -1,0 +1,58 @@
+
+var str = 'The quick brown fox jumps over the lazy dog.';
+var words = str.split(' ');
+console.log(words);
+
+function pigIt(str){
+    var words = str.split(' ');
+    var newWords = [];
+    for(var i = 0; i < words.length; i++){
+        if(words[i] == '!' || words[i] == '?'){
+        newWords.push(words[i]);
+    
+        }else{
+        newWords.push(words[i].slice(1) + words[i][0] + 'ay');
+        }
+    }
+    return newWords.join(' '); 
+}
+
+
+function digit(str){
+    var words = str.split(' ');
+    words.map(function(x){
+        words.slice(1) + words[0] + 'ay';
+    })
+}
+
+function sortArray(array){
+    var odd = [];
+    var even = [];
+    var newArray = [];
+    for(var i = 0; i < array.length; i++){
+        if(array[i] % 2 == 0){
+            even.push(array[i]);
+        }else{
+            odd.push(array[i]);
+        }
+    }
+    odd.sort(function(a,b){
+        return a - b;
+    });
+    even.sort(function(a,b){
+        return a - b;
+    });
+    for(var i = 0; i < array.length; i++){
+        if(array[i] % 2 == 0){
+            newArray.push(even.shift());
+        }else{
+            newArray.push(odd.shift());
+        }
+    }
+    return newArray;
+}
+d = [1,2,3]
+console.log(d.toString())
+let newArray = [even.tostring(), odd.toString()]
+newArray[0].Number()
+console.log(newArray)
