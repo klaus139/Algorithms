@@ -6,7 +6,6 @@
 
 
 
-
 function findEvenIndex(arr)
 {
   let i;

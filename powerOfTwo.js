@@ -11,4 +11,6 @@ function powerOfTwo(n){
 
 powerOfTwo(4);
 
-// //another method to solve this problem
+
+
+
